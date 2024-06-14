@@ -1,0 +1,201 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .box {
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .box-title {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  .box-input {
+    width: 96%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    /* text-align: center; */
+  }
+  
+  .box-button {
+    background: #5cb85c;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 96%;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .box-button:hover {
+    background: #4cae4c;
+  }
+  
+  .box-register {
+    margin-top: 20px;
+    color: #666666;
+  }
+  
+  .box-register a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  
+  .box-register a:hover {
+    text-decoration: underline;
+  }
+  
+  .errorMessage {
+    color: #d9534f;
+    margin-top: 20px;
+  }
+  
+  .button-retour {
+    background-color: #666;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 96%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .success h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .success p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .success a {
+    color: #337ab7;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+
+  .success a:hover {
+    text-decoration: underline;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    height: 36px;
+  }
+
+  table th {
+    background-color: #f2f2f2;
+  }
+
+  .button-group {
+    margin-bottom: 10px;
+  }
+
+  .button-group button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+.button-create {
+    background-color: #4cae4c;
+}
+
+.button-update {
+    background-color: #337ab7;
+}
+
+  .button-deco {
+    background-color: #666;
+  }
+
+  .button-delete {
+    background-color: #d9534f;
+  }
+
+  .button-group button:hover {
+    background-color: #286090;
+  }
+
+  .button-retour {
+    background-color: #666;
+    color: white;
+  }
+  .td-button {
+    padding: 5px;
+  }
+
+  .box-button-delete {
+    background: #d9534f;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 96%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .box-button-update {
+    background-color: #337ab7;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 96%;
+    margin-top: 10px;
+    text-align: center;
+  }

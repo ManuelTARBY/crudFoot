@@ -2,17 +2,13 @@
 <html>
 <head>
 <link rel="stylesheet" href="../style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+  <div>
 <?php
 require('../config.php');
 require('../globalMethodes.php');
-
-  // Vérifiez si l'utilisateur est connecté, sinon le redirige vers la page de connexion
-  if(!isset($_SESSION["username"])){
-    header("Location: ../login.php");
-    exit();
-  }
 
 // Vérifie si l'utilisateur est admin, sinon le redirige vers sa page d'utilisateur
 gereVerifAccesAdmin();
@@ -40,10 +36,9 @@ if (isset($_GET['delete_id'])) {
   }
 } else {
   // Afficher la liste des utilisateurs avec un bouton de suppression
-  $query = "SELECT * FROM competition";
+  $query = "SELECT * FROM competition ORDER BY winner";
   $result = mysqli_query($conn, $query);
 
-  echo "<h1 class='box-title'>Choisissez la compétition à supprimer</h1>";
   echo "<table class='box-table'>";
   echo "<tr><th>ID</th><th>Nom</th><th>Année</th><th>Organisateur</th><th>Vainqueur</th></tr>";
 
@@ -54,12 +49,16 @@ if (isset($_GET['delete_id'])) {
             <td>{$row['year']}</td>
             <td>{$row['location']}</td>
             <td>{$row['winner']}</td>
-            <td><a href='?delete_id={$row['id']}' class='box-button'>Supprimer</a></td>
+            <td><a href='?delete_id={$row['id']}' class='box-button-delete'>Supprimer</a></td>
           </tr>";
   }
 
   echo "</table>";
 }
 ?>
+  <button class="button-retour" onclick="window.location.href='home.php';">
+    Retour
+  </button>
+  </div>
 </body>
 </html>

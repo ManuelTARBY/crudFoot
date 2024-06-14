@@ -2,13 +2,6 @@
 require('../config.php');
 require('../globalMethodes.php');
 
-  // Initialiser la session
-  session_start();
-  // Vérifiez si l'utilisateur est connecté, sinon le redirige vers la page de connexion
-  if(!isset($_SESSION["username"])){
-    header("Location: login.php");
-    exit();
-  }
 
 // Vérifie si l'utilisateur est admin, sinon le redirige vers sa page d'utilisateur
 gereVerifAccesAdmin();
@@ -21,16 +14,20 @@ gereVerifAccesAdmin();
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Panneau d'administration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
     <div class="success">
     <h1>Bienvenue <?php echo $_SESSION['username']; ?> !</h1>
     <p>Espace d'administration</p>
-    <a href="add_competition.php">Ajouter une compétition</a> | 
-    <a href="update_competition.php">Modifier une compétition</a> | 
-    <a href="delete_competition.php">Supprimer une compétition</a> | 
-    <a href="../login.php">Déconnexion</a>
+    <div class="button-group">
+      <button class="button-create" onclick="window.location.href='add_competition.php';">Ajouter une compétition</button>
+      <button class="button-update" onclick="window.location.href='update_competition.php';">Modifier une compétition</button>
+      <button class="button-delete" onclick="window.location.href='delete_competition.php';">Supprimer une compétition</button>
+      <button class="button-deco" onclick="window.location.href='../logout.php';">Déconnexion</button>
+    </div>
     </ul>
     <div>
     <?php echo "<table>" ?>

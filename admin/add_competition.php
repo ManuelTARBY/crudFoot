@@ -2,17 +2,12 @@
 <html>
 <head>
 <link rel="stylesheet" href="../style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <?php
 require('../config.php');
 require('../globalMethodes.php');
-
-  // Vérifiez si l'utilisateur est connecté, sinon redirigez-le vers la page de connexion
-  if(!isset($_SESSION["username"])){
-    header("Location: ../login.php");
-    exit();
-  }
 
 // Vérifie si l'utilisateur est admin, sinon le redirige vers sa page d'utilisateur
 gereVerifAccesAdmin();
@@ -43,22 +38,26 @@ if (isset($_REQUEST['name'], $_REQUEST['year'], $_REQUEST['location'], $_REQUEST
     }
 }else{
 ?>
-<form class="box" action="" method="post">
-    <h1 class="box-title">Ajouter un utilisateur</h1>
-  <input type="text" class="box-input" name="name" 
-  placeholder="Nom de compétition" required />
-  
+<div>
+
+  <form class="box" action="" method="post">
+    <h1 class="box-title">Créer une compétition</h1>
+    <input type="text" class="box-input" name="name" 
+    placeholder="Nom de compétition" required />
+    
     <input type="text" class="box-input" name="year" 
-  placeholder="Année" required />
-
-  <input type="text" class="box-input" name="location" 
-  placeholder="Organisateur" required />
-
-  <input type="text" class="box-input" name="winner" 
-  placeholder="Vainqueur" required />
-  
+    placeholder="Année" required />
+    
+    <input type="text" class="box-input" name="location" 
+    placeholder="Organisateur" required />
+    
+    <input type="text" class="box-input" name="winner" 
+    placeholder="Vainqueur" required />
+    
     <input type="submit" name="submit" value="+ Add" class="box-button" />
-</form>
+  </form>
+</div>
+  
 <?php } ?>
 </body>
 </html>
