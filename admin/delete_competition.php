@@ -26,7 +26,6 @@ if (isset($_GET['delete_id'])) {
   if ($res) {
     echo "<div class='success'>
           <h3>La compétition a été supprimée avec succès.</h3>
-          <p>Cliquez <a href='home.php'>ici</a> pour retourner à la page d'accueil</p>
     </div>";
   } else {
     echo "<div class='error'>
@@ -41,7 +40,7 @@ if (isset($_GET['delete_id'])) {
 
   echo "<h1>Sélectionner la compétition à supprimer</h1>";
   echo "<table class='box-table'>";
-  echo "<tr><th>ID</th><th>Nom</th><th>Année</th><th>Organisateur</th><th>Vainqueur</th><th>Action</th></tr>";
+  echo "<tr><th>ID</th><th>Nom</th><th>Année</th><th>Organisateur</th><th>Vainqueur</th><th>Vainqueur</th></tr>";
 
   while ($row = mysqli_fetch_assoc($result)) {
     echo "<tr>
@@ -58,7 +57,7 @@ if (isset($_GET['delete_id'])) {
 }
 ?>
   <button class="button-retour" onclick="window.location.href='home.php';">
-    Retour
+    Retour page d'administration
   </button>
   </div>
 </body>
