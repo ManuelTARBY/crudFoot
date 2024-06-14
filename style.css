@@ -162,7 +162,19 @@ body {
     background-color: #d9534f;
   }
 
-  .button-group button:hover {
+  .button-delete:hover {
+    background-color: #c13d38;
+  }
+
+    .button-create:hover {
+    background-color: #428c42;
+  }
+  
+  .button-deco:hover {
+    background-color: #504f4f;
+  }
+  
+  .button-update:hover {
     background-color: #286090;
   }
 

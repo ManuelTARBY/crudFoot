@@ -1,8 +1,6 @@
 <?php
 require('config.php');
 require('globalMethodes.php');
-session_start();
-gereVerifAccesAdmin();
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +9,11 @@ gereVerifAccesAdmin();
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div>
     <h1>Bienvenue sur votre espace utilisateur.</h1> 
-    <a href="logout.php">Déconnexion</a>
+    <div class="button-group">
+      <button class="button-deco" onclick="window.location.href='logout.php';">Déconnexion</button>
+    </div>
+  </div>
 </body>
 </html>

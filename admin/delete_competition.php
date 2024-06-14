@@ -39,6 +39,7 @@ if (isset($_GET['delete_id'])) {
   $query = "SELECT * FROM competition ORDER BY winner";
   $result = mysqli_query($conn, $query);
 
+  echo "<h1>Sélectionner la compétition à supprimer</h1>";
   echo "<table class='box-table'>";
   echo "<tr><th>ID</th><th>Nom</th><th>Année</th><th>Organisateur</th><th>Vainqueur</th></tr>";
 
