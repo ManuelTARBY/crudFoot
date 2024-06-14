@@ -86,7 +86,7 @@ if (isset($_REQUEST['id'], $_REQUEST['name'], $_REQUEST['year'], $_REQUEST['loca
   
   echo "</table>";
 } ?>
-<button class="button-retour" onclick="window.location.href='home.php';">testtt</button>
+<button class="button-retour" onclick="window.location.href='home.php';">Retour</button>
 </div>
 </body>
 </html>

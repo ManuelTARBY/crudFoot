@@ -39,9 +39,6 @@ if (isset($_REQUEST['name'], $_REQUEST['year'], $_REQUEST['location'], $_REQUEST
 }else{
 ?>
 <div>
-<button class="button-retour" onclick="window.location.href='home.php';">
-    Retour
-  </button>
   <form class="box" action="" method="post">
     <h1 class="box-title">Créer une compétition</h1>
     <input type="text" class="box-input" name="name" 
@@ -58,6 +55,9 @@ if (isset($_REQUEST['name'], $_REQUEST['year'], $_REQUEST['location'], $_REQUEST
     
     <input type="submit" name="submit" value="+ Add" class="box-button" />
   </form>
+  <button class="button-retour" onclick="window.location.href='home.php';">
+    Retour
+  </button>
 </div>
   
 <?php } ?>

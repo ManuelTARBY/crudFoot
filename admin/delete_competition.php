@@ -41,7 +41,7 @@ if (isset($_GET['delete_id'])) {
 
   echo "<h1>Sélectionner la compétition à supprimer</h1>";
   echo "<table class='box-table'>";
-  echo "<tr><th>ID</th><th>Nom</th><th>Année</th><th>Organisateur</th><th>Vainqueur</th></tr>";
+  echo "<tr><th>ID</th><th>Nom</th><th>Année</th><th>Organisateur</th><th>Vainqueur</th><th>Action</th></tr>";
 
   while ($row = mysqli_fetch_assoc($result)) {
     echo "<tr>
