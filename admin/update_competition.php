@@ -40,10 +40,7 @@ if (isset($_REQUEST['id'], $_REQUEST['name'], $_REQUEST['year'], $_REQUEST['loca
   if($res) {
     echo "<div class='success'>
     <h3>La compétition a été mise à jour avec succès.</h3>
-    <p>Cliquez <a href='home.php'>ici</a> pour retourner à la page d'accueil</p>
     </div>";
-  } else {
-    echo "Raté !";
   }
 } else if (isset($_GET['edit_id'])) {
   // Si l'ID de la compétition est fourni, récupére les détails de la compétition pour pré-remplir le formulaire
@@ -86,7 +83,7 @@ if (isset($_REQUEST['id'], $_REQUEST['name'], $_REQUEST['year'], $_REQUEST['loca
   
   echo "</table>";
 } ?>
-<button class="button-retour" onclick="window.location.href='home.php';">Retour</button>
+<button class="button-retour" onclick="window.location.href='home.php';">Retour page d'administration</button>
 </div>
 </body>
 </html>
