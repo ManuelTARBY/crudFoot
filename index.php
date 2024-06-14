@@ -1,0 +1,1 @@
+<h1>Vous êtes utilisateur et ne pouvez donc accéder à la page d'administration.</h1> 
