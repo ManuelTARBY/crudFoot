@@ -33,7 +33,9 @@ if (isset($_REQUEST['name'], $_REQUEST['year'], $_REQUEST['location'], $_REQUEST
     if($res){
        echo "<div class='sucess'>
              <h3>La compétition a été créée avec succés.</h3>
-             <p>Cliquez <a href='home.php'>ici</a> pour retourner à la page d'accueil</p>
+               <button class='button-retour' onclick=\"window.location.href='home.php';\">
+    Retour page d'administration
+  </button>
        </div>";
     }
 }else{
@@ -56,7 +58,7 @@ if (isset($_REQUEST['name'], $_REQUEST['year'], $_REQUEST['location'], $_REQUEST
     <input type="submit" name="submit" value="+ Add" class="box-button" />
   </form>
   <button class="button-retour" onclick="window.location.href='home.php';">
-    Retour
+    Retour page d'administration
   </button>
 </div>
   
