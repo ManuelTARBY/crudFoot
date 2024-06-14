@@ -2,7 +2,7 @@
 // Informations d'identification
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'LedZep>Aerosmith');
+define('DB_PASSWORD', '<mdp>');
 define('DB_NAME', 'crudfoot');
  
 // Connexion à la base de données MySQL 
